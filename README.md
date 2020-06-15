@@ -12,7 +12,7 @@ We recommend starting out by using our official image in a Docker Compose file.
 **It's strongly recommended to specify a version number, do not use the `latest` image
 as Alexis may be updated frequently and produce incompatabilities or configuration changes.**
 
-```Dockercompose.yml
+```yml
 version: "3.8"
 services:
   alexis:
