@@ -1,0 +1,12 @@
+image: docker:19.03.5
+
+services:
+  - docker:19.03.5-dind
+
+# We don't have to cache anything this pipeline.
+cache: {}
+
+build:
+  stage: build
+  script:
+    - docker build -t elypia/alexis-discord:latest -f Dockerfile .
