@@ -6,11 +6,15 @@
 I'm a Discord chatbot that provides ample functionality for Discord guilds through
 utitlities and integrations with third-party services and games.  
 
-## Getting Started
-We recommend starting out by using our official image in a Docker Compose file.  
+This repository puts me in a little container so I can easily be sent around and ran
+on any system. If you want to see my chatbot code then you'll want to the [Alexis] repository!
 
-**It's strongly recommended to specify a version number, do not use the `latest` image
-as Alexis may be updated frequently and produce incompatabilities or configuration changes.**
+## Getting Started
+You should start out by using our official image in a docker-compose file since that'll be easier
+to maintain.  
+
+**It's strongly recommended to specify a version number, don't use `latest`; 
+I can get updates frequently and have breaking changes or new configurations.**
 
 ```yml
 version: "3.8"
@@ -23,7 +27,7 @@ services:
 
       application.persistence.url: "Required: Database"
       application.persistence.username: "Required: Database"
-      application.persistence.password: "Required Password"
+      application.persistence.password: "Required: Password"
 
       application.api.osu: "Optional: osu!"
       application.api.steam: "Optional: Steam"
@@ -46,6 +50,7 @@ want to use or derive work from this source code!
 [docker-image]: https://hub.docker.com/r/elypia/alexis-discord "Project on Docker"
 [gitlab]: https://gitlab.com/Elypia/docker-alexis-discord/commits/master "Repository on GitLab"
 [elypia-donate]: https://elypia.org/donate "Donate to Elypia"
+[Alexis]: https://gitlab.com/Elypia/alexis "Alexis on GitLab"
 [Apache 2.0]: https://www.apache.org/licenses/LICENSE-2.0 "Apache 2.0 License"
 [TL;DR]: https://tldrlegal.com/license/apache-license-2.0-(apache-2.0) "TL;DR of Apache 2.0"
 
