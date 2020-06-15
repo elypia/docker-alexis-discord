@@ -1,6 +1,6 @@
 # Alexis (Discord) for Docker [![Matrix]][matrix-community] [![Discord]][discord-guild] [![Docker]][docker-image] [![Build]][gitlab] [![Donate]][elypia-donate]
 ## Docker Images
-* [`x.y.z`, `x.y`, `x`, `latest`][alexis]
+* [`x.y.z`, `x.y`, `x`, `latest`][dockerfile]
 
 ## About Alexis
 I'm a Discord chatbot that provides ample functionality for Discord guilds through
@@ -43,7 +43,7 @@ While not legal advice, you can find a [TL;DR] that sums up what
 you're allowed and not allowed to do along with any requirements if you
 want to use or derive work from this source code!  
 
-[alexis]: https://gitlab.com/Elypia/docker-alexis-discord/blob/master/Dockerfile "Dockerfile for Alexis Build"
+[dockerfile]: https://gitlab.com/Elypia/docker-alexis-discord/blob/master/Dockerfile "Dockerfile for Alexis Build"
 
 [matrix-community]: https://matrix.to/#/+elypia:matrix.org "Matrix Invite"
 [discord-guild]: https://discordapp.com/invite/hprGMaM "Discord Invite"
