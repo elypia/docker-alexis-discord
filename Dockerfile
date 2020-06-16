@@ -1,5 +1,5 @@
 # Fetch specified binary from Alexis repository.
-FROM alpine:3.11.3 AS build
+FROM alpine:3.12.0 AS build
 
 # The location to download and extract Alexis (Discord) from. (TODO: Discord link due to issue with GitLab access settings.)
 ARG LOCATION="https://cdn.discordapp.com/attachments/247903643808956416/722328803631693844/artifacts.zip"
@@ -31,11 +31,11 @@ USER alexis
 WORKDIR /home/alexis/
 
 # Copy over the application from the build image; it's just a single jar file.
-COPY --from=build /home/dev/alexis/* /home/alexis/
+COPY --from=build /home/dev/discord/build/libs/* /home/alexis/
 
 ENV org.apache.deltaspike.ProjectStage=Production
 
 # On startup, execute the jar.
-ENTRYPOINT ["java", "-jar", "/home/alexis/alexis.jar"]
+ENTRYPOINT ["java", "-jar", "/home/alexis/alexis-discord.jar"]
 
 # Check the README.md to find our how to configure the image.
