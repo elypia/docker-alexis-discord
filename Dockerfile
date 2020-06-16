@@ -1,8 +1,8 @@
 # Fetch specified binary from Alexis repository.
 FROM alpine:3.11.3 AS build
 
-# The location to download and extract Alexis (Discord) from.
-ARG LOCATION="TODO"
+# The location to download and extract Alexis (Discord) from. (TODO: Discord link due to issue with GitLab access settings.)
+ARG LOCATION="https://cdn.discordapp.com/attachments/247903643808956416/722327555746824242/alexis-discord.jar"
 
 # Environment variables set to ensure consistency in names.
 ENV ARCHIVE_NAME="alexis.zip"
