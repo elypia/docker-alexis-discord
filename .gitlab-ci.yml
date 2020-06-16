@@ -1,7 +1,7 @@
-image: docker:19.03.5
+image: docker:19.03.11
 
 services:
-  - docker:19.03.5-dind
+  - docker:19.03.11-dind
 
 # We don't have to cache anything this pipeline.
 cache: {}
