@@ -2,7 +2,7 @@
 FROM alpine:3.12.0 AS build
 
 # The location to download and extract Alexis (Discord) from. (TODO: Discord link due to issue with GitLab access settings.)
-ARG LOCATION="https://cdn.discordapp.com/attachments/247903643808956416/722328803631693844/artifacts.zip"
+ARG LOCATION="https://cdn.discordapp.com/attachments/572787573236170773/722563436617400459/artifacts.zip"
 
 # Environment variables set to ensure consistency in names.
 ENV ARCHIVE_NAME="alexis.zip"
