@@ -43,7 +43,7 @@ services:
     volumes:
       - "./persistence:/home/alexis/persistence"
     environment:
-      discord.bot-token: "Required: Discord"
+      discord.bot-token: "YOUR DISCORD BOT TOKEN"
 ```
 
 ### Docker
