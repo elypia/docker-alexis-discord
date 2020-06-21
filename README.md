@@ -4,24 +4,24 @@
 
 ## About Alexis
 I'm a Discord chatbot that provides ample functionality for Discord guilds through
-utitlities and integrations with third-party services and games.  
+utilities and integrations with third-party services and games.  
 
-This repository puts me in a little container so I can easily be sent around and ran
+This repository puts me in a little container, so I can easily be sent around and ran
 on any system. If you want to see my chatbot code then you'll want to the [Alexis] repository!
 
 ## Getting Started
-**It's strongly recommended to specify a version number, don't use `latest`; 
+**It's strongly recommended specifying a version number, don't use `latest`; 
 I can get updates frequently can and have breaking changes or new configurations.**
 
 The Discord bot token, represented by the `discord.bot-token` environment variable is
-always required in order to run.
+always required to run.
 
 I support two databases, [MySQL], and [H2].  
-If you're just testing, or after the most simple configuration possible, then you can use
+If you're just testing, or after the simplest configuration possible, then you can use
 the embedded H2 database which is bundled in the image.
 
-It's **strongly** recommended to specify the following environment variables for 
-any production setup in order to configure the image to use MySQL instead of H2.
+It's **strongly** recommended specifying the following environment variables for 
+any production setup to configure the image to use MySQL instead of H2.
 * `application.persistence.url`
 * `application.persistence.username`
 * `application.persistence.password`
@@ -58,7 +58,7 @@ docker run -t                                 \
 ```
 
 ## Docker Environment Variables
-The Docker image can be configured though environment varaibles, the following will run through all available
+The Docker image can be configured though environment variables, the following will run through all available
 environment variables that can influence runtime.
 
 ### `discord.bot-token`
@@ -90,7 +90,7 @@ This must be set to `com.mysql.cj.jdbc.Driver`, if connecting to a MySQL instanc
 
 ### `application.api.steam`
 The optional Steam API key which can be obtained from the Steam API. This enables the Steam module
-which provides all Steam commands. The module will be disbaled if this is not specified.  
+which provides all Steam commands. The module will be disabled if this is not specified.  
 If you don't have one, you can login and find out how to obtain one from the [Steam Web API Documentation] page.
 
 ### `application.api.osu`
@@ -104,13 +104,13 @@ You can get an API key from the official [Cleverbot API] website.
 **This is a paid API, there is no way to have this module enabled without spending money.**
 
 ### `application.api.twitch.client-id`
-Your Twitch client ID to enable the Twitch module. This is required in order to enable the Twitch module
+Your Twitch client ID to enable the Twitch module. This is required to enable the Twitch module
 and any Twitch related functionality such as live stream notifications.
 You can create an application and get Twitch API credentials from the [Twitch Developers] site.
 
 ### `application.api.twitch.client-secret`
 Your Twitch client secret, required if the Twitch module is enabled.
-If you specify a Twitch client ID, this this is required, otherwise the bot will throw an error
+If you specify a Twitch client ID, this is required, otherwise the bot will throw an error
 and ask you to address this problem.
 
 ### `GOOGLE_APPLICATION_CREDENTIALS`
@@ -123,7 +123,7 @@ application, and register a service account.
 **Google Translate is a paid API, it has a free tier which is appropriate for most small use-cases but can incur costs with significant usage, if enabled, keep this in mind.**
 
 ### `GOOGLE_CLOUD_LOGGING`
-If `GOOGLE_APPLICATION_CREDENTIALS` is specifed, this can be set to `true` to enable logging to 
+If `GOOGLE_APPLICATION_CREDENTIALS` is specified, this can be set to `true` to enable logging to 
 Google Cloud Logging, this is helping for reviewing the usage of the application and persisting logs.
 
 ## Open-Source
