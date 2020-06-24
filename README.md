@@ -135,7 +135,7 @@ want to use or derive work from this source code!
 [dockerfile]: https://gitlab.com/Elypia/docker-alexis-discord/blob/master/Dockerfile "Dockerfile for Alexis Build"
 
 [matrix-community]: https://matrix.to/#/+elypia:matrix.org "Matrix Invite"
-[discord-guild]: https://discordapp.com/invite/hprGMaM "Discord Invite"
+[discord-guild]: https://discord.com/invite/hprGMaM "Discord Invite"
 [docker-image]: https://hub.docker.com/r/elypia/alexis-discord "Project on Docker"
 [gitlab]: https://gitlab.com/Elypia/docker-alexis-discord/commits/master "Repository on GitLab"
 [elypia-donate]: https://elypia.org/donate "Donate to Elypia"
@@ -152,7 +152,7 @@ want to use or derive work from this source code!
 [TL;DR]: https://tldrlegal.com/license/apache-license-2.0-(apache-2.0) "TL;DR of Apache 2.0"
 
 [Matrix]: https://img.shields.io/matrix/elypia:matrix.org?logo=matrix "Matrix Shield"
-[Discord]: https://discordapp.com/api/guilds/184657525990359041/widget.png "Discord Shield"
+[Discord]: https://discord.com/api/guilds/184657525990359041/widget.png "Discord Shield"
 [Docker]: https://img.shields.io/docker/pulls/elypia/alexis-discord?logo=docker "Docker Shield"
 [Build]: https://gitlab.com/Elypia/docker-alexis-discord/badges/master/pipeline.svg "GitLab Build Shield"
 [Donate]: https://img.shields.io/badge/elypia-donate-blueviolet "Donate Shield"
